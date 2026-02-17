@@ -25,12 +25,10 @@ jobs:
           tags: hanifsholihin/toko-jualan:latest
 
   deploy:
-    runs-on: self-hosted # <--- Pakai runner yang lu install di LXC
+    runs-on: self-hosted 
     needs: build-and-push
     steps:
       - name: Deploy to Docker Compose
         run: |
-          # Pindah ke folder tempat docker-compose.yaml toko lu berada
           cd ~/runner-websitejualan 
-          # Atau sesuaikan ke folder tempat file yaml lu
           docker compose up -d --force-recreate toko
