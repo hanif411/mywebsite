@@ -23,3 +23,21 @@ jobs:
           context: .
           push: true
           tags: hanifsholihin/toko-jualan:latest
+
+  deploy:
+    runs-on: self-hosted # <--- Pakai runner yang lu install di LXC
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build Docker Image
+        run: |
+          docker build -t hanifsholihin/toko-jualan:latest .
+          # Langsung nge-build di dalem server lu
+
+      - name: Deploy to Docker Compose
+        run: |
+          # Pindah ke folder tempat docker-compose.yaml toko lu berada
+          cd ~/runner-websitejualan 
+          # Atau sesuaikan ke folder tempat file yaml lu
+          docker compose up -d --force-recreate toko
