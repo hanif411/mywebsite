@@ -1,0 +1,7 @@
+services:
+  toko:
+    image: hanifsholihin/toko-jualan:latest
+    container_name: toko-jualan-app
+    restart: always
+    ports:
+      - "3900:3000"
