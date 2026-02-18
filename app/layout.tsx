@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Hanif Sholihin | Jasa Pembuatan Website & Sistem Digital Custom',
   description: 'Solusi pembuatan website super cepat (Next.js & Go). Spesialis Landing Page Umroh, E-commerce, dan Sistem Sekolah. Konsultasi Gratis!',
   keywords: [
@@ -24,6 +24,7 @@ export const metadata = {
     'Next.js Developer'
   ],
   authors: [{ name: 'Hanif Sholihin' }],
+  metadataBase: new URL('https://hanifsholihin.my.id'),
   openGraph: {
     title: 'Hanif Sholihin | Ahli Web & Digital Solution',
     description: 'Bikin bisnis Anda naik level dengan website profesional.',
@@ -31,13 +32,22 @@ export const metadata = {
     siteName: 'Hanif Sholihin Portfolio',
     images: [
       {
-        url: '/og-image.png',
+        url: '/og-image.jpg',
+        width: 1200,
         height: 630,
+        alt: 'Preview Website Hanif Sholihin',
       },
     ],
     locale: 'id_ID',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hanif Sholihin | Ahli Web & Digital Solution',
+    description: 'Solusi website cepat dan sistem custom untuk bisnis Anda.',
+    images: ['/og-image.jpg'],
+  },
+  category: 'technology',
 }
 
 export default function RootLayout({
