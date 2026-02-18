@@ -25,10 +25,23 @@ jobs:
           tags: hanifsholihin/toko-jualan:latest
 
   deploy:
-    runs-on: self-hosted 
+    runs-on: self-hosted
     needs: build-and-push
     steps:
-      - name: Deploy to Docker Compose
+      - name: Deploy and Refresh Image
         run: |
+          # 1. Masuk ke sarangnya
           cd ~/runner-websitejualan 
-          docker compose up -d --force-recreate toko
+          
+          # 2. Tarik image terbaru yang barusan di-push ke Docker Hub
+          docker compose pull toko
+          
+          # 3. Stop dan hapus container lama (biar bener-bener bersih)
+          docker compose stop toko
+          docker compose rm -f toko
+          
+          # 4. Nyalain lagi pake image hasil pull tadi
+          docker compose up -d toko
+          
+          # 5. Opsional: Bersihin image lama yang udah gak kepake (biar gak menuhin LXC)
+          docker image prune -f
