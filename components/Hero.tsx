@@ -45,7 +45,7 @@ export function Hero() {
               className=""
             >
               <a
-                href="https://wa.me/628151624951?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20tentang%20website%20untuk%20bisnis%20saya"
+                href="https://wa.me/6285710950704?text=Halo,%20saya%20ingin%20konsultasi%20gratis%20tentang%20website%20untuk%20bisnis%20saya"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group bg-[#FF6B35] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#ff5722] transition-all hover:shadow-2xl hover:-translate-y-1 flex items-center justify-center gap-2"

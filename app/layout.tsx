@@ -13,29 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Hanif Sholihin | Jasa Pembuatan Website & Sistem Digital Custom',
+  title: 'Veltra Creative | Jasa Pembuatan Website & Sistem Digital Custom',
   description: 'Solusi pembuatan website super cepat (Next.js & Go). Spesialis Landing Page Umroh, E-commerce, dan Sistem Sekolah. Konsultasi Gratis!',
   keywords: [
-    'Hanif Sholihin', 
+    'Veltra', 
     'Jasa Pembuatan Website', 
     'Landing Page Umroh', 
     'Sistem Sekolah Digital', 
     'Web Developer Indonesia',
     'Next.js Developer'
   ],
-  authors: [{ name: 'Hanif Sholihin' }],
-  metadataBase: new URL('https://hanifsholihin.my.id'),
+  authors: [{ name: 'Veltra Creative' }],
+  metadataBase: new URL('https://veltra.my.id'),
   openGraph: {
-    title: 'Hanif Sholihin | Ahli Web & Digital Solution',
+    title: 'Veltra Creative | Ahli Web & Digital Solution',
     description: 'Bikin bisnis Anda naik level dengan website profesional.',
-    url: 'https://hanifsholihin.my.id',
-    siteName: 'Hanif Sholihin Portfolio',
+    url: 'https://veltra.my.id',
+    siteName: 'Veltra Portfolio',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Preview Website Hanif Sholihin',
+        alt: 'Preview Website Veltra',
       },
     ],
     locale: 'id_ID',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hanif Sholihin | Ahli Web & Digital Solution',
+    title: 'Veltra Creative | Ahli Web & Digital Solution',
     description: 'Solusi website cepat dan sistem custom untuk bisnis Anda.',
     images: ['/og-image.jpg'],
   },

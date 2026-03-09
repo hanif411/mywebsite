@@ -105,7 +105,7 @@ export function Features() {
             Siap membawa bisnis Anda ke level berikutnya?
           </p>
           <a
-            href="https://wa.me/628151624951?text=Halo,%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20keunggulan%20layanan%20Hanif%20Digital"
+            href="https://wa.me/6285710950704?text=Halo,%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20keunggulan%20layanan%20Hanif%20Digital"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#FF6B35] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#ff5722] transition-all hover:shadow-xl hover:-translate-y-1"

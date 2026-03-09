@@ -1,38 +1,32 @@
 import React from 'react';
 import { Reveal } from './ui/Reveal';
+import villa from '@/public/villa.jpeg';
+import umroh from '@/public/umroh.jpeg';
+import Image from 'next/image';
 
 export interface PortfolioItem {
   id: string;
   title: string;
   category: string;
-  imageUrl: string;
+  imageUrl: any
+  Url: string
 }
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
   {
     id: '1',
-    title: 'Travel Nusa Indah',
+    title: 'Al Barkah Travel',
     category: 'Tour & Travel',
-    imageUrl: 'https://picsum.photos/400/800?random=1'
+    imageUrl: umroh,
+    Url: 'https://umroh.veltra.my.id/'
   },
   {
     id: '2',
-    title: 'Kopi Kenangan Senja',
-    category: 'F&B / Cafe',
-    imageUrl: 'https://picsum.photos/400/800?random=2'
+    title: 'Villa Veltra',
+    category: 'Villa',
+    imageUrl: villa,
+    Url: 'https://villa.veltra.my.id/'
   },
-  {
-    id: '3',
-    title: 'Berkah Abadi Furniture',
-    category: 'Toko Online',
-    imageUrl: 'https://picsum.photos/400/800?random=3'
-  },
-  {
-    id: '4',
-    title: 'Dr. Gigi Sehat',
-    category: 'Klinik / Jasa',
-    imageUrl: 'https://picsum.photos/400/800?random=4'
-  }
 ];
 
 export const Portfolio: React.FC = () => {
@@ -56,13 +50,13 @@ export const Portfolio: React.FC = () => {
       <div className="relative w-full">
          <div className="flex overflow-x-auto hide-scrollbar pb-12 px-4 md:px-[max(1rem,calc((100vw-1280px)/2))] gap-6 snap-x snap-mandatory">
             {PORTFOLIO_ITEMS.map((item, idx) => (
-               <div key={item.id} className="min-w-[280px] md:min-w-[400px] snap-center">
+               <div key={item.id} className="min-w-[280px] md:min-w-[400px] snap-center" onClick={() => window.open(item.Url, '_blank')}>
                   <Reveal delay={idx * 0.1} direction="left">
                     <div className="group relative rounded-2xl overflow-hidden shadow-lg aspect-[3/4] cursor-pointer">
-                      <img 
+                      <Image
                         src={item.imageUrl} 
                         alt={item.title} 
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="xl:w-100 xl:h-150 sm:w-80 object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-60 md:opacity-0 md:group-hover:opacity-80 transition-opacity duration-300"></div>
                       

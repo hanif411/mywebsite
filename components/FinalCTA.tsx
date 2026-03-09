@@ -71,7 +71,7 @@ export function FinalCTA() {
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             <a
-              href="https://wa.me/628151624951?text=Halo%20Hanif%20Digital,%20saya%20ingin%20konsultasi%20gratis%20untuk%20membuat%20website%20profesional%20untuk%20bisnis%20saya.%20Mohon%20info%20lebih%20lanjut!"
+              href="https://wa.me/6285710950704?text=Halo%20Veltra%20Creative,%20saya%20ingin%20konsultasi%20gratis%20untuk%20membuat%20website%20profesional%20untuk%20bisnis%20saya.%20Mohon%20info%20lebih%20lanjut!"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 bg-[#FF6B35] text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-[#ff5722] transition-all hover:shadow-2xl hover:-translate-y-1 shadow-xl"

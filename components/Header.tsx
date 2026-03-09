@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import Image from "next/image";
+import veltra from '@/public/veltra.png';
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -24,11 +26,11 @@ export function Header() {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-[#0A2463] to-[#00D4FF] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">H</span>
+            <div className="w-10 h-10">
+              <Image src={veltra} alt="Logo" className="w-full h-full rounded-lg"/>
             </div>
             <span className="text-xl font-bold text-[#0A2463]">
-              Hanif Digital Solutions
+              Veltra Creative
             </span>
           </motion.div>
 
@@ -53,7 +55,7 @@ export function Header() {
               Portofolio
             </button>
             <a
-              href="https://wa.me/628151624951?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Hanif%20Digital%20Solutions"
+              href="https://wa.me/6285710950704?text=Halo,%20saya%20tertarik%20dengan%20layanan%20Veltra%20Creative"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#FF6B35] text-white px-6 py-2 rounded-lg hover:bg-[#ff5722] transition-all hover:shadow-lg hover:-translate-y-0.5"

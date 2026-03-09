@@ -1,4 +1,8 @@
-import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { AiFillTikTok } from "react-icons/ai";
+import { FaSquareFacebook } from "react-icons/fa6";
+
 
 export function Footer() {
   return (
@@ -8,37 +12,37 @@ export function Footer() {
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <span className="text-xl font-bold">Hanif Digital Solutions</span>
+              <span className="text-xl font-bold">Veltra Creative</span>
             </div>
             <p className="mb-4 max-w-3xl">
               Solusi website profesional untuk UMKM Indonesia. Kami membantu bisnis Anda berkembang dengan teknologi digital yang cepat, aman, dan terpercaya.
             </p>
-            {/* <div className="flex gap-4">
+            <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/veltracreative/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all hover:scale-110"
               >
-                <Instagram size={20} />
+                <FaSquareInstagram size={36} />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61587801910205&locale=id_ID"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all hover:scale-110"
               >
-                <Facebook size={20} />
+                <FaSquareFacebook size={36} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://vm.tiktok.com/ZS9dHwWn1Rd73-BDza8/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all hover:scale-110"
               >
-                <Linkedin size={20} />
+                <AiFillTikTok size={59} />
               </a>
-            </div> */}
+            </div>
           </div>
 
           {/* Contact Info */}
@@ -48,7 +52,7 @@ export function Footer() {
               <li className="flex items-start gap-3">
                 <Phone size={18} className="mt-1 flex-shrink-0 text-[#00D4FF]" />
                 <a href="tel:+6281234567890" className=" hover:text-[#00D4FF] transition-colors">
-                  +62 815-1624-951
+                  +62 857-1095-0704
                 </a>
               </li>
               <li className="flex items-start gap-3">
